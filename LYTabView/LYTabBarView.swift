@@ -330,6 +330,8 @@ public class LYTabBarView: NSView {
 
     public func removeTabViewItem(_ tabviewItem: NSTabViewItem, animated: Bool = false) {
         if let index = self.packedTabViewItems.firstIndex(of: tabviewItem) {
+            // Send a notification for users of this library to track tab state
+            NotificationCenter.default.post(name: Notification.Name("LYTabViewItemRemoved"), object: index)
             removePackedTabItem(at: index)
         }
         self.tabView?.removeTabViewItem(tabviewItem)
