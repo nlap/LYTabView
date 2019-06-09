@@ -270,7 +270,7 @@
 					};
 					AE2562B31CAA614C00644D9F = {
 						CreatedOnToolsVersion = 7.3;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -584,7 +584,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robinlu.LYTabBarView-Demo";
 				PRODUCT_NAME = "LYTabView Demo";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -599,7 +599,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.robinlu.LYTabBarView-Demo";
 				PRODUCT_NAME = "LYTabView Demo";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
