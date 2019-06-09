@@ -329,7 +329,7 @@ public class LYTabBarView: NSView {
     }
 
     public func removeTabViewItem(_ tabviewItem: NSTabViewItem, animated: Bool = false) {
-        if let index = self.packedTabViewItems.index(of: tabviewItem) {
+        if let index = self.packedTabViewItems.firstIndex(of: tabviewItem) {
             removePackedTabItem(at: index)
         }
         self.tabView?.removeTabViewItem(tabviewItem)
@@ -342,7 +342,7 @@ public class LYTabBarView: NSView {
     }
 
     func removeFrom(_ tabViewItem: NSTabViewItem) {
-        if let index = self.tabViewItems.index(of: tabViewItem) {
+        if let index = self.tabViewItems.firstIndex(of: tabViewItem) {
             let dropItems = self.tabViewItems.dropFirst(index+1)
             for tabItem in dropItems {
                 self.tabView?.removeTabViewItem(tabItem)
