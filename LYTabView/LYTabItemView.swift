@@ -384,7 +384,6 @@ extension LYTabItemView: NSDraggingSource {
             self.tabBarView.addSubview(draggingView)
             draggingView.topAnchor.constraint(equalTo: self.tabBarView.topAnchor).isActive = true
             draggingView.bottomAnchor.constraint(equalTo: self.tabBarView.bottomAnchor).isActive = true
-            draggingView.widthAnchor.constraint(equalToConstant: self.frame.width)
             self.draggingViewLeadingConstraint = draggingView.leadingAnchor
                 .constraint(equalTo: self.tabBarView.tabContainerView.leadingAnchor, constant: self.frame.origin.x)
             self.draggingViewLeadingConstraint?.isActive = true
