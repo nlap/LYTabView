@@ -108,7 +108,33 @@ class LYTabItemView: NSButton {
 
     func setupViews() {
 
-        if #available(OSX 10.13, *) {
+        if #available(macOS 10.16, *) {
+            backgroundColor = [
+                .active: NSColor(named: NSColor.Name("background-bigsur"), bundle: Bundle(for: LYTabView.self))!,
+                .windowInactive: NSColor(named: NSColor.Name("backgroundWindowInactive-bigsur"),
+                                         bundle: Bundle(for: LYTabView.self))!,
+                .inactive: NSColor(named: NSColor.Name("backgroundInactive-bigsur"), bundle: Bundle(for: LYTabView.self))!
+            ]
+            hoverBackgroundColor = [
+                .active: NSColor(named: NSColor.Name("hover-bigsur"), bundle: Bundle(for: LYTabView.self))!,
+                .windowInactive: NSColor(named: NSColor.Name("hoverWindowInactive-bigsur"),
+                                         bundle: Bundle(for: LYTabView.self))!,
+                .inactive: NSColor(named: NSColor.Name("hoverInactive-bigsur"), bundle: Bundle(for: LYTabView.self))!
+            ]
+            selectedBackgroundColor = [
+                .active: NSColor(named: NSColor.Name("selected-bigsur"), bundle: Bundle(for: LYTabView.self))!,
+                .windowInactive: NSColor(named: NSColor.Name("selectedWindowInactive-bigsur"),
+                                         bundle: Bundle(for: LYTabView.self))!,
+                .inactive: NSColor(named: NSColor.Name("selectedInactive-bigsur"), bundle: Bundle(for: LYTabView.self))!
+            ]
+            unselectedForegroundColor = [
+                .active: NSColor(named: NSColor.Name("unselectedForeground-bigsur"), bundle: Bundle(for: LYTabView.self))!,
+                .windowInactive: NSColor(named: NSColor.Name("unselectedForegroundWindowInactive-bigsur"),
+                                         bundle: Bundle(for: LYTabView.self))!,
+                .inactive: NSColor(named: NSColor.Name("unselectedForegroundInactive-bigsur"),
+                                   bundle: Bundle(for: LYTabView.self))!
+            ]
+        } else if #available(OSX 10.13, *) {
             backgroundColor = [
                 .active: NSColor(named: NSColor.Name("background"), bundle: Bundle(for: LYTabView.self))!,
                 .windowInactive: NSColor(named: NSColor.Name("backgroundWindowInactive"),
