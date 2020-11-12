@@ -217,13 +217,13 @@ public class LYTabBarView: NSView {
     }
 
     private func setupViews() {
-        
         if #available(macOS 10.16, *) {
             backgroundColor = [
                 .active: NSColor(named: NSColor.Name("background-bigsur"), bundle: Bundle(for: LYTabView.self))!,
                 .windowInactive: NSColor(named: NSColor.Name("backgroundWindowInactive-bigsur"),
                                          bundle: Bundle(for: LYTabView.self))!,
-                .inactive: NSColor(named: NSColor.Name("backgroundInactive-bigsur"), bundle: Bundle(for: LYTabView.self))!
+                .inactive: NSColor(named: NSColor.Name("backgroundInactive-bigsur"),
+                                   bundle: Bundle(for: LYTabView.self))!
             ]
             borderColor = [
                 .active: NSColor(named: NSColor.Name("border-bigsur"), bundle: Bundle(for: LYTabView.self))!,

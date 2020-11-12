@@ -113,7 +113,8 @@ class LYTabItemView: NSButton {
                 .active: NSColor(named: NSColor.Name("background-bigsur"), bundle: Bundle(for: LYTabView.self))!,
                 .windowInactive: NSColor(named: NSColor.Name("backgroundWindowInactive-bigsur"),
                                          bundle: Bundle(for: LYTabView.self))!,
-                .inactive: NSColor(named: NSColor.Name("backgroundInactive-bigsur"), bundle: Bundle(for: LYTabView.self))!
+                .inactive: NSColor(named: NSColor.Name("backgroundInactive-bigsur"),
+                                   bundle: Bundle(for: LYTabView.self))!
             ]
             hoverBackgroundColor = [
                 .active: NSColor(named: NSColor.Name("hover-bigsur"), bundle: Bundle(for: LYTabView.self))!,
@@ -128,7 +129,8 @@ class LYTabItemView: NSButton {
                 .inactive: NSColor(named: NSColor.Name("selectedInactive-bigsur"), bundle: Bundle(for: LYTabView.self))!
             ]
             unselectedForegroundColor = [
-                .active: NSColor(named: NSColor.Name("unselectedForeground-bigsur"), bundle: Bundle(for: LYTabView.self))!,
+                .active: NSColor(named: NSColor.Name("unselectedForeground-bigsur"),
+                                 bundle: Bundle(for: LYTabView.self))!,
                 .windowInactive: NSColor(named: NSColor.Name("unselectedForegroundWindowInactive-bigsur"),
                                          bundle: Bundle(for: LYTabView.self))!,
                 .inactive: NSColor(named: NSColor.Name("unselectedForegroundInactive-bigsur"),
