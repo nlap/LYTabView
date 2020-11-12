@@ -378,6 +378,7 @@ extension LYTabItemView: NSPasteboardItemDataProvider {
 extension LYTabItemView: NSDraggingSource {
     func setupDragAndDrop(_ theEvent: NSEvent) {
         let pasteItem = NSPasteboardItem()
+        pasteItem.setDataProvider(self, forTypes: [.tiff])
         let dragItem = NSDraggingItem(pasteboardWriter: pasteItem)
         var draggingRect = self.frame
         draggingRect.size.width = 1
